@@ -12,4 +12,5 @@ ADD https://releases.hashicorp.com/terraform/${VERSION}/terraform_${VERSION}_lin
 RUN cd /usr/local/bin/ && unzip terraform.zip && rm -f *.zip && terraform version
 EXPOSE 80 
 # CMD ["nginx","-g","daemon off;"]
-ENTRYPOINT ["nginx","-g","daemon off;"]
+# ENTRYPOINT ["nginx","-g","daemon off;"]
+CMD ["ping", "-c 3", "www.facebook.com"] 
