@@ -1,9 +1,9 @@
-FROM ubuntu:20.04
-LABEL owner="email4prasanth@gmail.com"
-LABEL version="1.0"
-ARG VERSION='1.7.3'
-EXPOSE 80 
-#You cant override the commands using ENRTYPOINT 
-# ENTRYPOINT [ "ping", "-c 3" ]
-#You can override the commands using CMD
-CMD ["ping", "-c 3", "www.facebook.com"] 
+# FROM ubuntu:20.04
+# LABEL owner="email4prasanth@gmail.com"
+# LABEL version="1.0"
+# ARG VERSION='1.7.3'
+# EXPOSE 80 
+# #You cant override the commands using ENRTYPOINT 
+# # ENTRYPOINT [ "ping", "-c 3" ]
+# #You can override the commands using CMD
+# CMD ["ping", "-c 3", "www.facebook.com"] 
