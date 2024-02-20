@@ -9,7 +9,7 @@ COPY scorekeeper.js /var/www/html/scorekeeper.js
 COPY style.css /var/www/html/style.css
 ADD error.html /var/www/html/error.html
 ADD https://releases.hashicorp.com/terraform/${VERSION}/terraform_${VERSION}_linux_amd64.zip /usr/local/bin/terraform.zip
-RUN cd /usr/local/bin/ && unzip terraform.zip && rm -f * .zip && terraform version
+RUN cd /usr/local/bin/ && unzip terraform.zip && rm -f *.zip && terraform version
 EXPOSE 80 
 # CMD ["nginx","-g","daemon off;"]
 # ENTRYPOINT ["nginx","-g","daemon off;"]
